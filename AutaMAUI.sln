@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutaMAUI", "AutaMAUI.csproj", "{BA46C16A-4BB7-43C7-A65A-7B4D303DC9DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA46C16A-4BB7-43C7-A65A-7B4D303DC9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA46C16A-4BB7-43C7-A65A-7B4D303DC9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA46C16A-4BB7-43C7-A65A-7B4D303DC9DD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA46C16A-4BB7-43C7-A65A-7B4D303DC9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA46C16A-4BB7-43C7-A65A-7B4D303DC9DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA46C16A-4BB7-43C7-A65A-7B4D303DC9DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {114B0E7E-1ED4-430F-9AB1-9C94D6B5D197}
+	EndGlobalSection
+EndGlobal
