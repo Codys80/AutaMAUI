@@ -8,6 +8,7 @@
         <VerticalStackLayout HorizontalOptions="FillAndExpand"
             Padding="10">
             <Image
+                x:Name="imgCar"
                 Source="szary.png"
                 HeightRequest="150"
                 Aspect="AspectFit"/>
@@ -19,7 +20,8 @@
                 FontAttributes="Bold"
                 BackgroundColor="#1B5E20"
                 Padding="5"
-                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Fill"
                 />
             <Label
                 Text="Wybierz kolor lakieru"
@@ -31,6 +33,7 @@
                 />
             <Picker 
                 x:Name="pckColor"
+                TextColor="Black"
                 HorizontalOptions="CenterAndExpand"
                 BackgroundColor="#E1F1E1"
                 SelectedIndexChanged="handleChange"
@@ -45,26 +48,23 @@
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
-            <Label
-                Text="Wybierz kolor lakieru"
-                FontSize="18"
-                TextColor="#5D9B5D"
-                FontAttributes="Bold"
-                Margin="5"
-                HorizontalOptions="CenterAndExpand"               
-                />
+
             <BoxView MinimumHeightRequest="1"
                 BackgroundColor="DimGray"
                 HorizontalOptions="FillAndExpand"
                 />
             <Label
                 Text="Felgi"
-                TextColor="#1B5E20"
-                HorizontalOptions="CenterAndExpand"
+                FontSize="18"
+                TextColor="#5D9B5D"
+                FontAttributes="Bold"
+                Margin="5"
+                HorizontalOptions="CenterAndExpand"               
                 />
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="#9AEB9A">
 
                 <RadioButton
+                    TextColor="Black"
                     Content="Stalowe"
                     GroupName="FelgiGroup"
                     HorizontalOptions="StartAndExpand"
@@ -72,16 +72,20 @@
                     CheckedChanged="handleChange"
                 />
                 <RadioButton
+                    TextColor="Black"
                     Content="Aluminiowe"
                     GroupName="FelgiGroup"
                     HorizontalOptions="EndAndExpand"
                     CheckedChanged="handleChange"
                     />
              </HorizontalStackLayout>
-                <Label
-                    TextColor="Black"
-                    Text="Wybierz dodatkowe wyposażenie"
-                    HorizontalOptions="CenterAndExpand"
+            <Label
+                Text="Wybierz dodatkowe wyposażenie"
+                FontSize="18"
+                TextColor="#5D9B5D"
+                FontAttributes="Bold"
+                Margin="5"
+                HorizontalOptions="CenterAndExpand"               
                 />
             <HorizontalStackLayout HorizontalOptions="StartAndExpand">
                 <CheckBox
@@ -106,7 +110,7 @@
                 <Label
                     TextColor="Black"
                     VerticalOptions="CenterAndExpand"
-                    Text="Czujnik parkowania"
+                    Text="Climatronic"
                     HorizontalOptions="StartAndExpand"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout HorizontalOptions="StartAndExpand">
@@ -119,7 +123,7 @@
                 <Label
                     TextColor="Black"
                     VerticalOptions="CenterAndExpand"
-                    Text="Czujnik parkowania"
+                    Text="Nawigacja"
                     HorizontalOptions="StartAndExpand"/>
             </HorizontalStackLayout>
 
@@ -127,37 +131,17 @@
                     BackgroundColor="DimGray"
                     HorizontalOptions="FillAndExpand"
                 />
-            
+
             <Label
-                TextColor="#1B5E20"
                 Text="Wycena"
-                HorizontalOptions="CenterAndExpand"/>
-            <Label
-                x:Name="lblBase"
-                Text="Cena bazowa: 75000"
                 FontSize="18"
-                TextColor="Black"
-                HorizontalOptions="EndAndExpand"/>
+                TextColor="#5D9B5D"
+                FontAttributes="Bold"
+                Margin="5"
+                HorizontalOptions="CenterAndExpand"               
+                />
             <Label
-                x:Name="lblColor"
-                Text=""
-                FontSize="18"
-                TextColor="Black"
-                HorizontalOptions="EndAndExpand"/>
-            <Label
-                x:Name="lblFelgs"
-                Text=" "
-                FontSize="18"
-                TextColor="Black"
-                HorizontalOptions="EndAndExpand"/>
-            <Label
-                x:Name="lblClima    "
-                Text=" "
-                FontSize="18"
-                TextColor="Black"
-                HorizontalOptions="EndAndExpand"/>
-            <Label
-                x:Name="lblOverall"
+                x:Name="lblDisplay"
                 Text="Razem: 75000"
                 FontSize="18"
                 TextColor="Black"
